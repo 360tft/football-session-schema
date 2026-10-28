@@ -1,0 +1,24 @@
+{
+  "title": "Treasure gates dribbling",
+  "summary": "Every player dribbles through as many gates as they can in 30 seconds.",
+  "theme": "technical",
+  "ageGroup": "U8",
+  "durationMinutes": 15,
+  "players": { "min": 6, "max": 12, "goalkeepers": 0 },
+  "pitch": { "widthMetres": 20, "lengthMetres": 20, "template": "training-area", "goals": 0 },
+  "equipment": [
+    { "item": "ball", "quantity": 12 },
+    { "item": "cone", "quantity": 16, "colour": "mixed" }
+  ],
+  "steps": [
+    { "order": 1, "instruction": "Set 8 gates, two cones each, spread across the area.", "durationMinutes": 2 },
+    { "order": 2, "instruction": "Each player has a ball. On the whistle, dribble through any gate. Count your gates.", "durationMinutes": 5 },
+    { "order": 3, "instruction": "Repeat three rounds. Players try to beat their own score.", "durationMinutes": 8 }
+  ],
+  "coachingPoints": ["Small touches near the foot", "Head up between gates", "Use both feet"],
+  "progressions": [
+    { "direction": "easier", "change": "Make the gates wider." },
+    { "direction": "harder", "change": "A new gate only counts if it is a different one from the last." }
+  ],
+  "safetyNotes": ["Keep the area clear of loose balls."]
+}

@@ -1,0 +1,23 @@
+{
+  "title": "Near-post corner routine",
+  "summary": "Rehearse one attacking corner routine against a set defence, with a clear trigger.",
+  "theme": "set-piece",
+  "ageGroup": "Adult",
+  "durationMinutes": 25,
+  "players": { "min": 12, "max": 16, "goalkeepers": 1 },
+  "pitch": { "widthMetres": 40, "lengthMetres": 35, "template": "penalty-area", "goals": 1 },
+  "equipment": [
+    { "item": "ball", "quantity": 6 },
+    { "item": "bib", "quantity": 8, "colour": "orange" }
+  ],
+  "steps": [
+    { "order": 1, "instruction": "Walk the routine: two runners start deep, one attacks the near post, one blocks the goalkeeper's line.", "durationMinutes": 5 },
+    { "order": 2, "instruction": "Run the routine against passive defenders. Taker calls the trigger word.", "durationMinutes": 10 },
+    { "order": 3, "instruction": "Run it against live defenders. Count goals and clearances.", "durationMinutes": 10 }
+  ],
+  "coachingPoints": ["Time the run, do not arrive early", "Taker aims for a repeatable height and pace", "Second ball is as important as the first"],
+  "progressions": [
+    { "direction": "harder", "change": "Defenders may switch from zonal to man marking mid-round." }
+  ],
+  "safetyNotes": ["Warm up properly before heading practice."]
+}

@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/football-session-schema/schema.json",
+  "title": "Football coaching session",
+  "type": "object",
+  "required": ["title", "ageGroup", "players", "pitch", "steps", "coachingPoints"],
+  "additionalProperties": false,
+  "properties": {
+    "title": { "type": "string", "minLength": 3, "maxLength": 100 },
+    "summary": { "type": "string", "maxLength": 500 },
+    "theme": { "enum": ["technical", "tactical", "physical", "psychological", "small-sided-game", "set-piece"] },
+    "ageGroup": { "type": "string", "pattern": "^U(\\d{1,2})$|^Adult$", "description": "For example U9, U14 or Adult." },
+    "durationMinutes": { "type": "integer", "minimum": 1, "maximum": 180 },
+    "players": {
+      "type": "object",
+      "required": ["min", "max"],
+      "additionalProperties": false,
+      "properties": {
+        "min": { "type": "integer", "minimum": 1 },
+        "max": { "type": "integer", "minimum": 1 },
+        "format": { "type": "string", "pattern": "^\\d{1,2}v\\d{1,2}$", "description": "For example 4v4." },
+        "goalkeepers": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "pitch": {
+      "type": "object",
+      "required": ["widthMetres", "lengthMetres"],
+      "additionalProperties": false,
+      "properties": {
+        "widthMetres": { "type": "number", "exclusiveMinimum": 0 },
+        "lengthMetres": { "type": "number", "exclusiveMinimum": 0 },
+        "template": { "enum": ["training-area", "box", "half-pitch", "full-pitch", "third", "penalty-area"] },
+        "goals": { "type": "integer", "minimum": 0, "maximum": 8 }
+      }
+    },
+    "equipment": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["item", "quantity"],
+        "additionalProperties": false,
+        "properties": {
+          "item": { "type": "string", "minLength": 1 },
+          "quantity": { "type": "integer", "minimum": 1 },
+          "colour": { "type": "string" }
+        }
+      }
+    },
+    "steps": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["order", "instruction"],
+        "additionalProperties": false,
+        "properties": {
+          "order": { "type": "integer", "minimum": 1 },
+          "instruction": { "type": "string", "minLength": 3 },
+          "durationMinutes": { "type": "integer", "minimum": 1 }
+        }
+      }
+    },
+    "coachingPoints": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 3 } },
+    "progressions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["direction", "change"],
+        "additionalProperties": false,
+        "properties": {
+          "direction": { "enum": ["easier", "harder"] },
+          "change": { "type": "string", "minLength": 3 }
+        }
+      }
+    },
+    "safetyNotes": { "type": "array", "items": { "type": "string" } }
+  }
+}

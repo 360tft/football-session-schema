@@ -1,0 +1,24 @@
+{
+  "title": "4v4 switch the play",
+  "summary": "Two teams play 4v4 with a bonus goal for a pass across the pitch to a wide target player.",
+  "theme": "small-sided-game",
+  "ageGroup": "U12",
+  "durationMinutes": 20,
+  "players": { "min": 8, "max": 10, "format": "4v4", "goalkeepers": 0 },
+  "pitch": { "widthMetres": 30, "lengthMetres": 40, "template": "box", "goals": 2 },
+  "equipment": [
+    { "item": "ball", "quantity": 4 },
+    { "item": "small goal", "quantity": 2 },
+    { "item": "bib", "quantity": 10, "colour": "two colours" }
+  ],
+  "steps": [
+    { "order": 1, "instruction": "Play 4v4 to two small goals. Place a target player on each touchline.", "durationMinutes": 3 },
+    { "order": 2, "instruction": "A pass from one side to the far target player scores a bonus point.", "durationMinutes": 12 },
+    { "order": 3, "instruction": "Swap target players and teams. Play one more round.", "durationMinutes": 5 }
+  ],
+  "coachingPoints": ["Scan before receiving", "Change the point of attack quickly", "Weight the long pass"],
+  "progressions": [
+    { "direction": "easier", "change": "Allow two touches only for the defending team." },
+    { "direction": "harder", "change": "Limit each team to three touches." }
+  ]
+}

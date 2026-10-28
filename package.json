@@ -1,0 +1,12 @@
+{
+  "name": "football-session-schema",
+  "version": "0.1.0",
+  "description": "A JSON Schema for football coaching sessions and practices.",
+  "type": "module",
+  "license": "(MIT AND CC-BY-4.0)",
+  "scripts": {
+    "test": "node --test test/*.test.ts",
+    "validate": "node scripts/validate.ts examples/*.json"
+  },
+  "engines": { "node": ">=22.6" }
+}
