@@ -45,3 +45,6 @@ It also checks two rules the schema cannot: `players.min` is not above `players.
 - Example sessions in `examples/`: CC BY 4.0. See [LICENSE-DATA](LICENSE-DATA). Credit "360TFT".
 
 The examples are written fresh. They contain no user data.
+
+---
+Made by [360TFT](https://360tft.com). Build practices and sessions with [FootballGPT](https://footballgpt.co?utm_source=github&utm_medium=open_source&utm_campaign=football-session-schema). Test your knowledge of the Laws with [RefereeGPT](https://refereegpt.co/quiz?utm_source=github&utm_medium=open_source&utm_campaign=football-session-schema).
